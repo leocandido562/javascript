@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.cor1 {
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+}
+
+.cor2 {
+    background-color: green;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+}
+
+.cor3 {
+    background-color: blue;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+}
