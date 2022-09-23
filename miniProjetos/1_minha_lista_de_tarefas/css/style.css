@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(90, 90, 142);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    margin-top: 100px;
+}
+
+button {
+    padding: 10px;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.hide {
+    display: none;
+}
