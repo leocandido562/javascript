@@ -27,3 +27,8 @@ main {
 .hide {
     display: none;
 }
+
+#complete {
+    padding: 10px;
+    background-color: green;
+}
