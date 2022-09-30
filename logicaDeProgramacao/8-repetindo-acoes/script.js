@@ -13,6 +13,10 @@ while(indice <= 1000) {
 
     document.write(`${n1} x ${indice} = ${n1*indice} <br>`);
 
+    if(indice % 10 === 0 && indice > 0) {
+        document.write("<hr>");
+    }
+
     indice++;
 
 }
