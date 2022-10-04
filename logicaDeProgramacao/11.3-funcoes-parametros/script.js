@@ -17,12 +17,25 @@ function iniciarCalculo(simbolo) {
 
     var n2 = Number(prompt("Digite outro número: "));
 
-    var msg = calcular(simbolo, n1, n2);
+    try{
+        var msg = calcular(simbolo, n1, n2);
+    } catch(e) {
+        alert(e);
+        return // pra nao chamar a funçao escreve que coloca undefined na tela
+    }
 
     escreve(msg);
 }
 
 function calcular(simbolo, n1, n2) {
+
+    if(simbolo !== "+" && simbolo !== "-" && simbolo !== "*" && simbolo !== "/") {
+        throw new Error("Digite um símbolo válido");
+    }
+
+    if(isNaN(n1) || isNaN(n2)) {
+        throw new Error("Chama passando somente números");
+    }
     
     var numeroCalculado = null;
 
