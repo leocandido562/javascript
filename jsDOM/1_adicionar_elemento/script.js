@@ -1,6 +1,6 @@
 // Criar elemento, colocar classe e valor
 let newElement = document.createElement("p");
-newElement.className = "vermelho" ;
+newElement.className = "vermelho";
 newElement.innerText = "Novo elemento";
 
 // Adicionar elemento na div e clonar

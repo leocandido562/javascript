@@ -1,0 +1,14 @@
+* {
+    background-color: gray;
+    font-size: 30px;
+}
+
+.myDiv {
+    border: 3px solid black;
+    text-align: center;
+}
+
+.vermelho {
+    color: rgb(145, 21, 21);
+    background-color: white;
+}
