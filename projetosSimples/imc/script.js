@@ -1,15 +1,15 @@
-const cxAltura = document.querySelector("#altura");
-const cxPeso = document.querySelector("#peso");
+const inAltura = document.querySelector("#altura");
+const inPeso = document.querySelector("#peso");
 const cxResultado = document.querySelector("#resultado");
 
 const btnCalcular = document.querySelector("#btnCalcular");
 btnCalcular.addEventListener("click", calcular_imc);
 
 function calcular_imc() {
-    if((cxAltura.value !== "") && (cxPeso.value !== "")) {
-    let altura = cxAltura.value;
-    let peso = cxPeso.value;
-    let imc = (peso * (altura * altura)).toFixed(1);
+    if((inAltura.value !== "") && (inPeso.value !== "")) {
+    let altura = inAltura.value;
+    let peso = inPeso.value;
+    let imc = (peso / (altura * altura)).toFixed(1);
 
     let classificacao = "";
     if (imc < 18.5) {
