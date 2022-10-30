@@ -8,6 +8,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="cor1">teste</div><div class="cor2">teste</div><div class="cor3">teste</div>
+    <main>
+        <section id="content">
+            <form action="">
+                <div id="inputs">
+                    <label for="num1"></label>
+                    <input
+                        type="number"
+                        name="num1"
+                        id="num1"
+                        autofocus
+                    />
+                    <label for="num2"></label>
+                    <input
+                        type="number"
+                        name="num2"
+                        id="num2"
+                    />
+                </div>
+
+                <div id="buttons">
+                    <button type="submit" id="soma">Somar</button>
+                    <button type="submit" id="subtrai">Subtrair</button>
+                    <button type="submit" id="multiplica">Multiplicar</button>
+                    <button type="submit" id="divide">Dividir</button>
+                    <button type="reset" id="reset">Limpar</button>
+                </div>
+
+                <div id="result">
+                    <label for="showResult"></label>
+                    <input
+                        type="text"
+                        name="showResult"
+                        id="showResult"
+                        readonly>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="soma.js"></script>
 </body>
 </html>
